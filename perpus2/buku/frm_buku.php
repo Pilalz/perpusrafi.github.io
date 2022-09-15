@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>form input siswa</title>
+	<style type="text/css">
+		
+		#form_buku	{
+			width: 50%;
+			background-color: #F7D08A;
+			padding: 10px;
+			box-sizing: 10px;
+			margin: auto;
+			border: 1px;
+		}
+		label{
+			margin-top: 10px;
+		}
+		input[type='text'],[type='date']{
+			box-sizing: border-box;
+			display: inline-block;
+			width: 100%;
+			padding: 5px 8px;
+			border-radius: 5px;
+			border: 1px solid black;	
+			margin-bottom: 10px;	
+		}
+		input[type='submit']{
+			box-sizing: border-box;
+			border-radius: 10px;
+			background-color: #DED9C4;
+			width: 100%;
+			padding: 5px;
+			margin-bottom: 10px;
+		}
+		input[type='submit']:hover{
+			background-color: #b0a268;
+		}
+		textarea{
+			box-sizing: border-box;
+			display: inline-block;
+			padding: 5px 8px;
+			width: 100%;
+			border-radius: 5px;
+			border: 1px solid black;
+			resize: vertical;
+			margin-bottom: 10px;
+		}
+		#judul_form{
+			background: #E5890A;
+			text-align: center;
+			margin-bottom: 15px;
+			padding: 10px;
+			border-radius: 5px 5px 0 0;
+			box-sizing: border-box;
+			font-family: cooper black;
+			font-size: 20px;
+			border-bottom: 2px ;
+			color: black;
+		}
+		select{
+			box-sizing: border-box;
+			display: inline-block;
+			width: 100%;
+			padding: 5px 8px;
+			border-radius: 5px;
+			border: 1px solid black;	
+			margin-bottom: 10px;
+		}
+		input[type='reset']{
+			box-sizing: border-box;
+			border-radius: 10px;
+			background-color: #DED9C4;
+			width: 100%;
+			padding: 5px;
+			margin-bottom: 10px;
+		}
+		input[type='reset']:hover{
+			background-color: #b0a268;
+		}
+		#home{
+			box-sizing: border-box;
+			text-align: center;
+			display: inline-block;
+			border-radius: 10px;
+			background-color: #DED9C4;
+			width: 100%;
+			padding: 5px;
+			text-decoration: none;
+			border: solid 1px black;
+			color: black;
+		}
+		#home:hover{
+			background-color: #b0a268;
+		}
+	</style>
+</head>
+<body>
+	<div id="form_buku">
+		<div id="judul_form">INPUT DATA BUKU</div>
+			<form method="post" action="tambahbuku.php">
+				<label for="No">No.Buku</label>
+				<input id="No" type="text" name="No" placeholder="Masukkan Nomor Buku">
+
+				<label for="Buku" for="">Judul Buku</label>
+				<input id="Buku" type="text" name="Buku" placeholder="Masukkan Nama Buku">
+
+				<label for="Pengarang" for="">Pengarang Buku</label>
+				<input id="Pengarang" type="text" name="Pengarang" placeholder="Masukkan Nama Buku">
+
+				<label for="Penerbit" for="">Penerbit Buku</label>
+				<input id="Penerbit" type="text" name="Penerbit" placeholder="Masukkan Nama Buku">
+
+				<label for="Tahun" for="Tahun">Tahun Terbit</label>
+				<input type="date" name="Tahun" id="Tahun" placeholder="Masukkan Tahun Terbit">
+
+				<label for="Status" for="">Status</label>
+				<select id="Status" name="Status">
+					<option selected="select" value="">Select</option>
+					<option value="Dipinjam">Dipinjam</option>
+					<option value="Tersedia">Tersedia</option>
+				</select>
+
+					<input type="submit" name="submit" value="Simpan">
+					<input type="reset" name="reset" value="Kosongkan">
+					<a id="home" href="../?menu=Buku">Beranda</a>
+			</form>
+		</div>
+	</body>
+</html>
